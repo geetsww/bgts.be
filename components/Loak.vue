@@ -27,6 +27,10 @@
   align-items: center;
   justify-content: center;
 }
+.loak svg{
+  width: 75px;
+  height: 75px;
+}
 .loak h2{
   font-size: 1.2rem;
 }

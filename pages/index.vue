@@ -28,6 +28,7 @@ onMounted(() => {
     <div class="grid">
       <Loak />
       <Insta />
+      <Albums/>
       <Music />
     </div>
   </main>

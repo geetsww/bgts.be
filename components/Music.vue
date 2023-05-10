@@ -15,10 +15,11 @@
   align-items: center;
   justify-content: center;
   padding: 20px;
+  gap:20px;
 }
 .music figure{
-  width: 150px;
-  height: 150px;
+  width: 75px;
+  height: 75px;
 }
 .music figure img{
   height: 100%;
