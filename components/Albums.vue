@@ -42,6 +42,11 @@ const swiperEl = document.querySelector('swiper-container');
 <style>
   swiper-container{
     height: 100%;
+    border-radius: 10px;
+  }
+  .albums{
+
+        background: white;
   }
   @media (max-width:460px) {
       .albums{

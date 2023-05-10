@@ -51,7 +51,6 @@ onMounted(() => {
 .grid>* {
   opacity: 0;
   border-radius: 10px;
-  overflow: hidden;
   border: 1px solid rgb(234, 234, 234);
   filter: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
 }
