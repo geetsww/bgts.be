@@ -14,6 +14,7 @@
   
 <style>
 .aside{
+  opacity: 0;
   width: 300px;
   flex-shrink: 0;
   display: flex;

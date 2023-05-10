@@ -1,16 +1,24 @@
 <script setup>
-import {animate, stagger} from "motion"
+import { animate, stagger } from "motion"
 useHead({
   title: 'Benjamin Geets'
 })
-onMounted(()=>{
-  animate(".grid > *", {
-  scale:[1.5,1],
-  opacity:[0,1]
-}, {
-  duration:.5,
-  delay:stagger(.2)
-})
+onMounted(() => {
+  setTimeout(()=>{
+    animate(".grid > *", {
+    scale: [1.5, 1],
+    opacity: [0, 1]
+  }, {
+    duration: .5,
+    delay: stagger(.2)
+  })
+  }, 300)
+  animate('.aside',{
+    x:[-50,0],
+    opacity:[0,1]
+  }, {
+    duration:.3
+  })
 })
 </script>
 
@@ -19,7 +27,7 @@ onMounted(()=>{
     <Aside />
     <div class="grid">
       <Loak />
-      <Insta/>
+      <Insta />
       <Music />
     </div>
   </main>
@@ -38,7 +46,9 @@ onMounted(()=>{
   gap: 20px;
 }
 
+
 .grid>* {
+  opacity: 0;
   border-radius: 10px;
   overflow: hidden;
   border: 1px solid rgb(234, 234, 234);
@@ -92,4 +102,5 @@ onMounted(()=>{
     display: flex;
     flex-direction: column;
   }
-}</style>
+}
+</style>
