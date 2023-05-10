@@ -41,4 +41,10 @@
   width: 100px;
   height: 100px;
 }
+@media (max-width: 460px) {
+  .loak{
+    grid-row-start: auto;
+    aspect-ratio: 1/1;
+  }
+}
 </style>

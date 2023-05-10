@@ -18,6 +18,10 @@
     width: 50%;
   }
   @media (max-width: 460px) {
+    .insta{
+
+    aspect-ratio: 1/1;
+    }
     .insta figure{
       height: 75px;
       width: 75px;

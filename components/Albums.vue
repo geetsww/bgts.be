@@ -9,7 +9,7 @@ console.log(swiperEl.current)
 </script>
 
 <template>
-<div>
+<div class="albums">
   <swiper-container pagination="true">
   <swiper-slide>
     <a href="https://genius.com/albums/H-jeunecrack/3eme-cycle">
@@ -43,5 +43,13 @@ console.log(swiperEl.current)
 <style>
   swiper-container{
     height: 100%;
+  }
+  @media (max-width:460px) {
+      .albums{
+
+        grid-column-start: span 2;
+      grid-row-start: span 2;
+    aspect-ratio: 1/1;
+      }
   }
 </style>

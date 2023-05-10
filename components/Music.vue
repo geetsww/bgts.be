@@ -32,4 +32,10 @@
     flex-direction: column;
   }
 }
+@media (max-width:460px) {
+  .music{
+    grid-column-start: auto;
+    aspect-ratio: 1/1;
+  }
+}
 </style>

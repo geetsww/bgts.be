@@ -99,9 +99,14 @@ onMounted(() => {
 }
 
 @media (max-width: 460px) {
+  .main{
+    padding: 1rem;
+  }
   .grid {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    gap:1rem;
   }
 }
 </style>
