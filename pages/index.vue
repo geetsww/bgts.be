@@ -3,14 +3,15 @@ import { animate, stagger } from "motion"
 useHead({
   title: 'Benjamin Geets'
 })
-onMounted(() => {
+onNuxtReady(()=>{
   setTimeout(()=>{
     animate(".grid > *", {
     scale: [1.5, 1],
     opacity: [0, 1]
   }, {
     duration: .5,
-    delay: stagger(.2)
+    delay: stagger(.2),
+    easing:"ease-out"
   })
   }, 300)
   animate('.aside',{
@@ -49,19 +50,22 @@ onMounted(() => {
 
 
 .grid>* {
+  transform: scale(1.5);
   opacity: 0;
   border-radius: 10px;
   border: 1px solid rgb(234, 234, 234);
-  filter: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+  box-shadow: 0 20px 13px rgb(0 0 0 / 0.03);
 }
 
-.grid>*>* {
-  transition: transform 300ms;
+@media (min-width:810px) {
+  .grid>* {
+  transition: transform 300ms, box-shadow 300ms;
 }
 
-.grid>*:hover>* {
-  transform: scale(1.05);
-
+.grid>*:hover {
+  transform: scale(1.05) !important;
+  box-shadow: none;
+}
 }
 
 @media (max-width: 1220px) {
