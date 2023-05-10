@@ -1,0 +1,34 @@
+<template>
+  <a class="music" href="https://music.bgts.be">
+    <figure>
+    <img src="~/assets/apple-music.png" alt="">
+  </figure>
+  <span>@geetsww</span>
+  </a>
+</template>
+
+<style>
+.music{
+  background-color: #ffffff;
+  grid-column-start: 2 span;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.music figure{
+  width: 150px;
+  height: 150px;
+}
+.music figure img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+@media (max-width:809px) {
+  .music{
+
+    flex-direction: column;
+  }
+}
+</style>
