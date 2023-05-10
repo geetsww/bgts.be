@@ -4,7 +4,6 @@ onMounted(()=>{
 // register Swiper custom elements
 register();
 const swiperEl = document.querySelector('swiper-container');
-console.log(swiperEl.current)
 })
 </script>
 
